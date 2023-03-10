@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 15097.114 14948.303"
+   xml:space="preserve"
+   sodipodi:docname="phone-call-icon.svg"
+   width="15097.113"
+   height="14948.303"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs9" /><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" /><g
+     id="g4"
+     transform="translate(0.07698288,-0.3494335)"><path
+       d="m 33.84,50.25 c 4.13,7.45 8.89,14.6 15.07,21.12 6.2,6.56 13.91,12.53 23.89,17.63 0.74,0.36 1.44,0.36 2.07,0.11 0.95,-0.36 1.92,-1.15 2.87,-2.1 0.74,-0.74 1.66,-1.92 2.62,-3.21 3.84,-5.05 8.59,-11.32 15.3,-8.18 0.15,0.07 0.26,0.15 0.41,0.21 l 22.38,12.87 c 0.07,0.04 0.15,0.11 0.21,0.15 2.95,2.03 4.17,5.16 4.2,8.71 0,3.61 -1.33,7.67 -3.28,11.1 -2.58,4.53 -6.38,7.53 -10.76,9.51 -4.17,1.92 -8.81,2.95 -13.27,3.61 -7,1.03 -13.56,0.37 -20.27,-1.69 -6.56,-2.03 -13.17,-5.38 -20.39,-9.84 l -0.53,-0.34 c -3.31,-2.07 -6.89,-4.28 -10.4,-6.89 C 31.12,93.32 18.03,79.31 9.5,63.89 2.35,50.95 -1.55,36.98 0.58,23.67 1.76,16.37 4.89,9.73 10.35,5.35 c 4.76,-3.84 11.17,-5.94 19.47,-5.2 0.95,0.07 1.8,0.62 2.25,1.44 l 14.35,24.26 c 2.1,2.72 2.36,5.42 1.21,8.12 -0.95,2.21 -2.87,4.25 -5.49,6.15 -0.77,0.66 -1.69,1.33 -2.66,2.03 -3.21,2.33 -6.86,5.02 -5.61,8.18 z"
+       id="path2"
+       inkscape:export-filename="../devel/web/medialv2/phone.svg"
+       inkscape:export-xdpi="50.007885"
+       inkscape:export-ydpi="50.007885"
+       style="fill:#ffffff" /></g></svg>
