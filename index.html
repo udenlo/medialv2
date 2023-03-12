@@ -8,21 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Slab:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    /> -->
 
     <title>Medial d.o.o Beograd</title>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/base.css" />
-    <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!-- TopBar -->
@@ -45,81 +39,128 @@
       </div>
     </div>
     <!-- TopBar End -->
+    <!-- Header -->
     <header class="header">
-      <div class="header-content container">
-        <a href="#" class="brand">
-          <img src="./img/logo.svg" alt="Medial Group Logo" />
-        </a>
-        <div class="nav">
-          <!-- NavBar Mobile -->
-          <div class="navbar-mobile">
-            <ul>
-              <li class="navbar-mobile-link">
-                <a href="#">Naslovna</a>
-              </li>
-              <li class="navbar-mobile-link">
-                <a href="#" id="ponuda">Ponuda <span>&#43;</span></a>
-                <ul id="ponuda-list">
-                  <li>
-                    <a href="./pages/neurologija.html" class="ponuda-item"
-                      >neurologija</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/kardiologija.html" class="ponuda-item"
-                      >kardiologija</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/radiologija.html" class="ponuda-item"
-                      >radiologija</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./pages/potrosni.html" class="ponuda-item"
-                      >potrošni materijal</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="navbar-mobile-link">
-                <a href="./pages/zastupnistva.html">Zastupništva</a>
-              </li>
-              <li class="navbar-mobile-link">
-                <a href="./pages/o-nama.html">O nama</a>
-              </li>
-              <li class="navbar-mobile-link">
-                <a href="./pages/kontakt.html">Kontakt</a>
-              </li>
-            </ul>
-          </div>
-          <!-- NavBar Mobile End -->
-          <!-- NavBar Desktop -->
-          <div class="navbar-desktop">
-            <ul>
-              <li><a href="index.html">Naslovna</a></li>
-              <li><a href="./pages/ponuda.html">Ponuda</a></li>
-              <li><a href="./pages/zastupnistva.html">Zastupništva</a></li>
-              <li><a href="./pages/o-nama.html">O nama</a></li>
-              <li><a href="./pages/kontakt.html">Kontakt</a></li>
-            </ul>
-          </div>
-          <!-- NavBar Desktop End -->
-        </div>
-        <!-- Toggle -->
-        <div class="toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <!-- Toggle End -->
-      </div>
-    </header>
-    <section class="intro"></section>
-    <main class="main"></main>
+      <nav class="nav">
+        <div class="container navbar">
+          <a href="#">
+            <img
+              src="./img/logo.svg"
+              alt="Medial Group Logo"
+              class="navbar-brand"
+            />
+          </a>
 
+          <ul id="navbar-mobile">
+            <li><a href="index.html">Naslovna</a></li>
+            <li>
+              <a href="#" class="ponuda-mobile"
+                >Ponuda <span class="ponuda-span">&plus;</span></a
+              >
+
+              <ul id="ponuda-mobile">
+                <li><a href="./pages/neurologija.html">neurologija</a></li>
+                <li><a href="./pages/karidologija.html">kardiologija</a></li>
+                <li><a href="./pages/radiologija.html">radiologija</a></li>
+                <li>
+                  <a href="./pages/potrosni-materijal.html"
+                    >potrošni materijal</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="./pages/o-nama.html">O nama</a></li>
+            <li><a href="./pages/zastupnistva.html">Zastupništva</a></li>
+            <li><a href="./pages/kontakt.html">Kontakt</a></li>
+          </ul>
+
+          <ul id="navbar-desktop">
+            <li><a href="#">NASLOVNA</a></li>
+            <li>
+              <a href="#">PONUDA</a>
+              <ul class="ponuda-desktop">
+                <li>
+                  <a href="#">neurologija</a>
+                  <ul class="neurologija-desktop">
+                    <li><a href="#">EEG</a></li>
+                    <li><a href="#">EMNG i EP</a></li>
+                    <li><a href="#">TCD</a></li>
+                    <li><a href="#">TMS</a></li>
+                    <li><a href="#">QST</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">kardiologija</a>
+                  <ul class="kardiologija-desktop">
+                    <li><a href="#">EKG</a></li>
+                    <li><a href="#">Holteri</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">radiologija</a>
+                  <ul class="radiologija-desktop">
+                    <li><a href="#">Elastografija</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">potrošni materijal</a>
+                  <ul class="potrosni-desktop">
+                    <li><a href="#">Electro Cap Int.</a></li>
+                    <li><a href="#">ANT Neuro</a></li>
+                    <li><a href="#">Natus</a></li>
+                    <li><a href="#">Weaver</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">O NAMA</a></li>
+            <li><a href="#">ZASTUPNIŠTVA</a></li>
+            <li><a href="#">KONTAKT</a></li>
+          </ul>
+
+          <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Intro -->
+    <section class="intro">
+      <div class="intro-text container">
+        <h1>Distribucija, servis i održavanje medicinske opreme</h1>
+      </div>
+    </section>
+    <!-- Intro End -->
+
+    <!-- Main -->
+    <!-- Main End -->
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-content container">
+        <div class="footer-info">
+          <h5>Info</h5>
+          <hr />
+          <ul>
+            <li>
+              Bulevar Arsenija Čarnojevića 74/2
+              <br />
+              11000 Beograd, Srbija
+            </li>
+            <li>
+              <a href="tel:+381638838717">+381 11 212 9414</a>
+            </li>
+            <li>pon-pet: 07:30-15:30</li>
+            <li>
+              <a href="mailto:medial@medial.rs"> medial@medial.rs </a>
+            </li>
+          </ul>
+        </div>
+
         <div class="footer-linkovi">
           <h5>Linkovi</h5>
           <hr />
@@ -150,28 +191,9 @@
             </li>
           </ul>
         </div>
-
-        <div class="footer-kontakt">
-          <h5>Info</h5>
-          <hr />
-          <ul>
-            <li>
-              Bulevar Arsenija Čarnojevića 74/2
-              <br />
-              11000 Beograd, Srbija
-            </li>
-            <li>
-              <a href="tel:+381638838717">+381 11 212 9414</a>
-            </li>
-            <li>pon-pet: 07:30-15:30</li>
-            <li>
-              <a href="mailto:medial@medial.rs"> medial@medial.rs </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </footer>
-
+    <!-- Footer End -->
     <div class="botbar">
       <div class="container">
         <p>&copy; 2023 Medial Group d.o.o</p>
