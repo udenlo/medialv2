@@ -11,26 +11,67 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* font-family: "Mulish", sans-serif; */
   font-size: 16px;
   font-weight: 400;
   color: rgb(73, 80, 87);
-  /* background-color: #f0fcff; */
 }
 
-h1 {
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Roboto Slab", serif;
+  line-height: 1;
+  margin: 0;
+}
+h1 {
   font-size: 48px;
   font-weight: 600;
 }
-h5 {
-  font-size: 18px;
+h2 {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--purple);
 }
+h5 {
+  font-size: 19px;
+  font-weight: 500;
+}
+/* Headings End */
 a {
   color: var(--purple);
 }
+p {
+  max-width: 75ch;
+  margin: 0 auto;
+}
 img {
   display: block;
+}
+button {
+  padding: 0.55rem 1rem;
+  background-color: var(--purple);
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+button a {
+  color: white;
+}
+button:hover {
+  background-color: var(--pink);
+}
+button:active {
+  background-color: var(--pink);
 }
 .container {
   width: 94%;
@@ -82,8 +123,8 @@ hr {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   height: 67px;
-  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -92,6 +133,7 @@ hr {
 }
 /* Navbar */
 .nav {
+  background-color: white;
 }
 .navbar {
   /* position: relative; */
@@ -106,7 +148,7 @@ hr {
 #navbar-mobile {
   display: none;
   position: absolute;
-  width: 94%;
+  width: 96%;
   margin: 0 auto;
   top: 99%;
   left: 0;
@@ -115,14 +157,14 @@ hr {
   background-color: white;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  padding: 5px 10px;
+  padding: 10px 20px 8px;
 }
 #navbar-mobile.active {
   display: block;
 }
 #navbar-mobile li {
-  padding: 3px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.025);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 #navbar-mobile > li:nth-child(5) {
   border-bottom: none;
@@ -141,6 +183,7 @@ hr {
 #ponuda-mobile li {
   border-bottom: none;
   font-size: 15px;
+  padding: 5px 0;
 }
 
 .ponuda-span {
@@ -182,12 +225,25 @@ hr {
 }
 /* Toggler End */
 
+/* Main & Aside */
+.main,
+.sertifikat,
+.ponuda {
+  padding: 3rem 0;
+  text-align: center;
+}
+.sertifikat {
+  background-color: #efefef;
+}
+/* Main & Aside End */
+
 /* Footer */
 .footer {
   color: white;
   background-color: var(--dblue);
-  padding: 64px 0;
+  padding: 3rem 0;
   font-weight: 300;
+  text-align: left;
 }
 .footer img {
   display: inline-block;
