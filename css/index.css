@@ -72,8 +72,9 @@ h2 {
   gap: 2rem;
 }
 .ponuda-grid a {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
+  line-height: 1.25;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
@@ -87,7 +88,7 @@ h2 {
 .neurologija {
   width: 90%;
   margin: 0 auto;
-  height: 180px;
+  height: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +111,7 @@ h2 {
 .kardiologija {
   width: 90%;
   margin: 0 auto;
-  height: 180px;
+  height: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,7 +134,7 @@ h2 {
 .radiologija {
   width: 90%;
   margin: 0 auto;
-  height: 180px;
+  height: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +157,7 @@ h2 {
 .potrosni {
   width: 90%;
   margin: 0 auto 3rem;
-  height: 180px;
+  height: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,6 +176,7 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   cursor: pointer;
+  padding: 0 1rem;
 }
 /* Ponuda End */
 
@@ -203,11 +205,40 @@ h2 {
 }
 /* Partneri End */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 400px) {
+  .intro {
+    height: calc(70vh - 95px);
+  }
+  .ponuda-grid {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .ponuda-grid {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 540px) {
   .ponuda-grid {
     grid-template-columns: 1fr 1fr;
+    padding: 0;
   }
-  .ponuda-grid a {
-    font-size: 1.5rem;
+  .partneri-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
+  .partneri-grid-item img {
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .footer-info {
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
 }
