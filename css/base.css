@@ -146,6 +146,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  margin-top: 5px;
   padding: 5px 0;
 }
 
@@ -226,7 +227,7 @@ hr {
   position: absolute;
   top: 78%;
   right: 0;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem;
   border-radius: 3px;
 }
 .neurologija-desktop a,
