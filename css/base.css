@@ -8,15 +8,12 @@
   --purple: #8b789b;
   --green: rgb(96, 137, 168);
 }
-
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgb(73, 80, 87);
 }
-
-/* Headings */
 h1,
 h2,
 h3,
@@ -27,19 +24,18 @@ h5 {
   margin: 0;
 }
 h1 {
-  font-size: 48px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 h2 {
-  font-size: 38px;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--purple);
 }
 h5 {
-  font-size: 19px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
-/* Headings End */
 a {
   color: var(--purple);
 }
@@ -84,6 +80,7 @@ hr {
   height: 3px;
   margin: 4px 0 8px;
   background-color: var(--purple);
+  border-radius: 3px;
 }
 
 /* Topbar */
@@ -207,22 +204,34 @@ hr {
   display: none;
   background-color: white;
 }
-.ponuda-dropmenu:hover .ponuda-desktop {
+.ponuda-desktop hr {
+  height: 2px;
+  border-radius: 3px;
+  margin-left: 6px;
+  background-color: var(--pink);
+}
+.ponuda-dropmenu:hover .ponuda-desktop,
+.ponuda-dropmenu:focus .ponuda-desktop {
   display: flex;
   gap: 3rem;
   position: absolute;
   top: 78%;
   right: 0;
   padding: 2rem;
-}
-.ponuda-desktop ul {
-  padding-top: 0.75rem;
+  border-radius: 3px;
 }
 .neurologija-desktop a,
 .kardiologija-desktop a,
 .radiologija-desktop a,
 .potrosni-desktop a {
-  font-weight: 400;
+  font-weight: 500;
+}
+.neurologija-desktop a:hover,
+.kardiologija-desktop a:hover,
+.radiologija-desktop a:hover,
+.potrosni-desktop a:hover {
+  color: var(--pink);
+  transition: all 0.3s ease-in-out;
 }
 /* Toggler */
 .toggle {
@@ -267,7 +276,7 @@ hr {
   color: white;
   background-color: var(--dblue);
   padding: 3rem 0;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 .footer img {
@@ -280,6 +289,7 @@ hr {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  font-size: 15px;
 }
 .footer-content div {
   padding: 16px 0;
@@ -291,12 +301,19 @@ hr {
   align-items: center;
 }
 
+/* Media Queries */
 @media screen and (min-width: 576px) {
   .footer-info {
     margin-right: auto;
   }
+  .botbar p {
+    max-width: 1000ch;
+  }
 }
 @media screen and (min-width: 643px) {
+  h1 {
+    font-size: 4rem;
+  }
   .topbar-text {
     display: block;
   }
@@ -305,6 +322,9 @@ hr {
   }
 }
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
   .container {
     width: 90%;
   }
@@ -313,26 +333,26 @@ hr {
     column-gap: 0.5rem;
   }
   #navbar-desktop li {
-    font-weight: 500;
+    font-weight: 600;
   }
   #navbar-desktop a {
     padding: 3px 6px;
+    font-size: 17px;
   }
   .link-decor {
     display: inline-block;
     text-decoration: none;
   }
-
   .link-decor::after {
     content: "";
     display: block;
     width: 0;
-    height: 2px;
+    height: 3px;
     margin-top: 1px;
+    border-radius: 3px;
     background: var(--pink);
     transition: width 0.3s;
   }
-
   .link-decor:hover::after {
     width: 60%;
     /* transition: width .3s; */
@@ -364,11 +384,10 @@ hr {
   }
 }
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 19px;
+  }
   .brand img {
     width: 150px;
   }
 }
-/* TEMP */
-/* .intro {
-  height: 50vh;
-} */

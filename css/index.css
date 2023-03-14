@@ -29,7 +29,7 @@ h2 {
 }
 .intro h1 {
   text-shadow: 1px 1px 2px black;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 /* Intro End */
 
@@ -77,6 +77,10 @@ h2 {
   line-height: 1.25;
   color: white;
   text-shadow: 1px 1px 2px black;
+  transition: all 0.3s ease-in-out;
+}
+.ponuda-grid a:hover {
+  font-size: 1.78rem;
 }
 .ponuda-grid hr {
   background-color: var(--pink);
@@ -106,7 +110,7 @@ h2 {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .kardiologija {
   width: 90%;
@@ -129,7 +133,7 @@ h2 {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .radiologija {
   width: 90%;
@@ -152,7 +156,7 @@ h2 {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .potrosni {
   width: 90%;
@@ -175,7 +179,7 @@ h2 {
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 0 1rem;
 }
 /* Ponuda End */
@@ -190,7 +194,7 @@ h2 {
   margin: 0 auto 2rem;
 }
 .partneri-grid {
-  padding: 0 1rem 2rem;
+  padding: 7rem 1rem 2rem;
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr;
@@ -205,6 +209,7 @@ h2 {
 }
 /* Partneri End */
 
+/* Media Queries */
 @media screen and (min-width: 400px) {
   .intro {
     height: calc(70vh - 95px);
@@ -214,14 +219,12 @@ h2 {
     padding-right: 3rem;
   }
 }
-
 @media screen and (min-width: 440px) {
   .ponuda-grid {
     padding-left: 4rem;
     padding-right: 4rem;
   }
 }
-
 @media screen and (min-width: 540px) {
   .ponuda-grid {
     grid-template-columns: 1fr 1fr;
@@ -230,15 +233,28 @@ h2 {
   .partneri-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .partneri-grid-item img {
-  }
 }
-
 @media screen and (min-width: 576px) {
   .footer-info {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
+  .intro {
+    height: calc(50vh - 95px);
+  }
+  .ponuda-grid {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 900px) {
+  .partneri-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro {
+    height: calc(60vh - 95px);
+  }
 }
