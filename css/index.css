@@ -240,9 +240,6 @@ h2 {
   }
 }
 @media screen and (min-width: 768px) {
-  .intro {
-    height: calc(50vh - 95px);
-  }
   .ponuda-grid {
     max-width: 800px;
     margin: 0 auto;
